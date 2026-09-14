@@ -14,10 +14,12 @@ namespace Assignment.StudentSolution
 
         protected virtual void TakeDamage(int damage)
         {
+            health -= damage;
         }
 
         private void Move(Vector3 direction)
         {
+            position += direction;
         }
     }
 }
